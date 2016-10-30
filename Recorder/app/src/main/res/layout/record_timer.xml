@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tc="http://schemas.android.com/apk/res-auto">
+    <xiaoyu.recorder.RecordTimerView
+        android:id="@+id/timer_view"
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        tc:radius="80dip"
+        tc:strokeWidth="20dip"
+        tc:circleColor="@color/circle_color"
+        tc:ringColor="@color/ring_color" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textSize="20dp"
+        android:text="Long click the button to record"
+        android:id="@+id/tv_record"
+        android:layout_below="@+id/timer_view"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Record"
+        android:id="@+id/btn_record"
+        android:layout_below="@+id/tv_record"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#4da3c5ce"
+    android:layout_marginBottom="5dp"
+    >
+    <TextView
+        android:id="@+id/tv_fileName"
+        android:layout_height="50dp"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="this is file name"
+        android:clickable="true">
+    </TextView>
+
+    <TextView
+        android:id="@+id/tv_audio_state"
+        android:layout_height="50dp"
+        android:layout_width="fill_parent"
+        android:layout_weight="3"
+        android:background="#b36382b7"
+        android:gravity="center"
+        android:text="Recognised"
+        android:textColor="#80000000"
+        android:clickable="true">
+    </TextView>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RecordTimerView">
+        <attr name="radius" format="dimension"></attr>
+        <attr name="strokeWidth" format="dimension"></attr>
+        <attr name="circleColor" format="color"></attr>
+        <attr name="ringColor" format="color"></attr>
+    </declare-styleable>>
+</resources>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--unconfident result display-->
+    <LinearLayout
+        android:id="@+id/linear_unconfident"
+        android:layout_height="200dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="20dp"
+        android:visibility="gone">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/a1">
+        </ImageView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:textSize="25dp"
+            android:textColor="#3009a3"
+            android:text="Sorry, we can't predict the result, try to find an expert!"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="20dp">
+        </TextView>
+    </LinearLayout>
+    <Button
+        android:id="@+id/expert"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:text="Find an Expert!"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:visibility="gone"/>
+
+    <!--The predict result with confidence-->
+    <LinearLayout
+        android:id="@+id/linear_confident"
+        android:orientation="horizontal"
+        android:layout_height="150dp"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:visibility="gone">
+        <ImageView
+            android:id="@+id/img_top_bird"
+            android:layout_width="150dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/a1"
+            android:clickable="true">
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_bird_name"
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:textSize="30dp"
+                android:textColor="#3009a3"
+                android:text="Bird Name">
+            </TextView>
+
+            <TextView
+                android:id="@+id/tv_confidence"
+                android:layout_width="wrap_content"
+                android:layout_height="75dp"
+                android:textSize="25dp"
+                android:textColor="#3c0d4c"
+                android:text="Confidence">
+            </TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!--The line of other possible-->
+    <TextView
+        android:id="@+id/tv_otherPossible"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:textSize="15dp"
+        android:textColor="#9894a3"
+        android:gravity="center"
+        android:background="#dcdfe5"
+        android:layout_marginTop="10dp"
+        android:text="Other Possible Result"
+        android:visibility="gone">
+    </TextView>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/birdList"
+        android:visibility="gone"
+        >
+    </ListView>
+
+
+</LinearLayout>

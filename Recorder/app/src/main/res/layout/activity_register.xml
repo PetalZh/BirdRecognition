@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_login">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dip"
+        android:layout_margin="15dip"
+        android:background="@drawable/background_login_div">
+
+        <!-- User name-->
+        <TextView
+            android:id="@+id/tv_reg_uname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:text="User Name:"
+            />
+        <EditText
+            android:id="@+id/reg_uname"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_reg_uname"
+            android:singleLine="true"
+            android:inputType="text"/>
+        <!-- Email-->
+        <TextView
+            android:id="@+id/tv_reg_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/reg_uname"
+            android:text="Email:"
+            />
+        <EditText
+            android:id="@+id/reg_email"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_reg_email"
+            android:singleLine="true"
+            android:inputType="text"/>
+        <!-- password-->
+        <TextView
+            android:id="@+id/tv_reg_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reg_email"
+            android:layout_marginTop="3dp"
+            android:text="Password:"
+            />
+        <EditText
+            android:id="@+id/reg_pass"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_reg_pass"
+            android:password="true"
+            android:singleLine="true"
+            android:inputType="textPassword" />
+        <!-- re-password-->
+        <TextView
+            android:id="@+id/tv_reg_repass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reg_pass"
+            android:layout_marginTop="3dp"
+            android:text="Re-password:"
+            />
+        <EditText
+            android:id="@+id/reg_repass"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_reg_repass"
+            android:password="true"
+            android:singleLine="true"
+            android:inputType="textPassword" />
+        <TextView
+            android:id="@+id/tv_reg_info"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:textColor="#ff0000"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/reg_repass"
+            android:layout_alignLeft="@id/reg_repass">
+
+        </TextView>
+
+        <Button
+            android:id="@+id/btn_reg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:layout_below="@id/reg_repass"
+            android:layout_alignRight="@id/reg_repass"
+            android:textColor="#80000000"
+            android:background="@drawable/button"
+            android:text="Sign Up"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <!--
+        <ImageView
+            android:
+            android:src="@drawable/cat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="25dp" />
+        <ImageView
+            android:src="@drawable/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/miniTwitter_logo"
+            android:layout_alignBottom="@id/miniTwitter_logo"
+            android:paddingBottom="8dp"/>
+        -->
+    </RelativeLayout>
+
+</LinearLayout>
